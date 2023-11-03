@@ -1,0 +1,42 @@
+Comenzi windows folosite la laborator  Windows:
+cd -> Schimba folder curent
+dir -> Afiseaza fisierele din director curent
+md sau mkdir -> creaza folder cu ce nume ii dai
+rd sau rmdir -> sterge folder cu ce nume ii dai
+copy -> Folosit pentru copiat fisiere
+xcopy -> La fel dar mai smecher
+robocopy -> La fel dar mai smecher
+notepad -> Deschide notepad
+echo -> Afiseaza pe ecran textul dat
+move -> Muta fisiere
+set -> Seteaza variabile de mediu
+
+Exemplu
+Copiere folder f1 in f2 ( folder + continut, creaza si folderul f1 in f2) :
+	xcopy f1 f2\f1 /I /E
+
+Comenzi laborator Linux
+cd -> ca pe windows
+pwd -> Vezi path curent
+ls -> Afiseaza ce fisiere/directoare sunt aici
+sudo -> Echivalentul al run as administrator pe windows
+mv -> Muta fisiere
+cp -> Copiaza fisiere
+rm -> Sterge fisiere si foldere
+touch -> Creaza un nou fisier cu numele dat
+mkdir -> Ca pe windows
+rmdir -> Ca pe Windows
+
+ps -> Afiseaza procesele  curent (ps -e sa le afiseze pe toate)
+Afiseaza toate procesele care incep cu firefox (ps -ef | grep "firefox" sau ps -C firefox)
+Comenzi less, more, afisat doar primele 10 linii de procese (head -10, less window)
+Oprit procese kill (kill -9)
+Inchide toate procesele ce contin ca nume firefox 
+Sterge directoarele cu pattern dat (rmdir fisier*)
+Cautare folder in sistem (find ~ -name test)
+gedit, nano, vim
+
+*Scripturi *:
+modificare permisiuni fisier cu chmod (chmod 777 nume_script.sh)
+afisare argumente linie comanda, afisare prim argument, afisare fisierele txt de la folderul dat ca arg, afisare pentru fiecare fisier txt din folder dat ca argument linie comanda numarul de linii, copiat fisierele date ca argument in alt folder daca acestea au permisiune de execute.
+Cum se foloseste while (cu shift) si for : https://linuxconfig.org/how-do-i-print-all-arguments-submitted-on-a-command-line-from-a-bash-script
